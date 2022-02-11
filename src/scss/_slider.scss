@@ -1,0 +1,29 @@
+section.promo {
+    position: relative;
+    height: 100vh;
+    .container {
+        position: relative;
+        font-size: 1.05em;
+        box-sizing: border-box;
+        line-height: 1;
+        padding: 0;
+        width: 100%;
+        max-width: 70vw;
+        margin: 0 auto;
+        .swiper {
+            width: 100vw;
+            height: 100vh;
+            .swiper-wrapper {
+                .swiper-slider {
+                    text-align: center;
+                    font-size: 2em;
+                    background: red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .spiper-pagination {}
+            }
+        }
+    }
+}
