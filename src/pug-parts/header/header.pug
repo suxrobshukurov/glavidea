@@ -1,20 +1,34 @@
-section.header
+header
     .container
-        .logo
-            img(src="../img/logo.svg", alt="ГлавИдея").logo-img
-        ul.nav-list
-            li.nav-item
-                a(href="#").nav-link О нас
-            li.nav-item
-                a(href="#").nav-link Узнать больше
-            li.nav-item
-                a(href="#").nav-link Часто задаваемые вопросы
-            li.nav-item
-                a(href="#").nav-link Контакты
-        ul.header-btns
-            li.btn
-                a(href="#").btn-link Подписка
-            li.btn
-                a(href="#").btn-link Войти
-        .burger
-            span
+        section.header 
+            .header__logo
+                a(href="#") 
+                    img(src="/../img/logo.webp", alt="GlavIdea")
+            nav.header__nav
+                ul.header__menu
+                    li.menu__item
+                        a.item__link(href="#") Главная
+                    li.menu__item
+                        a.item__link(href="#") Узнать больше
+                        ul.menu__submenu 
+                            li.submenu__item 
+                                a.item__link(href="#") Узнать больше
+                            li.submenu__item 
+                                a.item__link(href="#") О нас
+                            li.submenu__item 
+                                a.item__link(href="#") Бесплатный экземпляр
+                    li.menu__item 
+                        a.item__link(href="#") Часто задаваемые вопросы
+                    li.menu__item 
+                        a.item__link(href="#") Контакты
+                .menu-btn
+                    span 
+                    span 
+                    span 
+            .header__btns
+                .btn.btn__action
+                    a(href="#") 
+                        span Подпишитесь
+                .btn.btn__main
+                    a(href="#") 
+                        span Войти

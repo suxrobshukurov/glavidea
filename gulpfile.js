@@ -72,6 +72,7 @@ gulp.task('js', async function() {
         .pipe(browserSync.reload({ stream: true }))
 });
 
+
 gulp.task('browser-sync', async function() {
     browserSync.init({
         server: {

@@ -1,21 +1,106 @@
 * {
-    padding: 0;
+    position: relative;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+    font-family: "PT Sans";
+    @media (min-width: 320px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+        font-size: 10px;
+    }
+    @media (min-width:481px) {
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        font-size: 11px;
+    }
+    @media (min-width:641px) {
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        font-size: 12px;
+    }
+    @media (min-width:961px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        font-size: 13px;
+    }
+    @media (min-width:1025px) {
+        /* big landscape tablets, laptops, and desktops */
+        font-size: 14px;
+    }
+    @media (min-width:1281px) {
+        /* hi-res laptops and desktops */
+        font-size: 15px;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Philofofer";
 }
 
 a {
     text-decoration: none;
 }
 
-li {
+ul {
     list-style: none;
 }
 
-html,
-body {
-    min-width: 320px;
+.container {
+    max-width: 70.6vw;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 320px) {
+        /* smartphones, iPhone, portrait 480x320 phones */
+        max-width: 94.6vw;
+    }
+    @media (min-width:481px) {
+        /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+        max-width: 94.6vw;
+    }
+    @media (min-width:641px) {
+        /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+        max-width: 94.6vw;
+    }
+    @media (min-width:961px) {
+        /* tablet, landscape iPad, lo-res laptops ands desktops */
+        max-width: 94.6vw;
+    }
+    @media (min-width:1025px) {
+        /* big landscape tablets, laptops, and desktops */
+        max-width: 70.6vw;
+    }
+    @media (min-width:1281px) {
+        /* hi-res laptops and desktops */
+        max-width: 70.6vw;
+    }
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 0.7em 1.3em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.486);
+    font-weight: 700;
+    transition: 0.3s linear;
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.btn__action {
+    background: $violet;
+}
+
+.btn__main {
+    background: $blue;
 }

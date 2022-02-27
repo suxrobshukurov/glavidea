@@ -1,0 +1,212 @@
+section.advantage {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1;
+    background: url("../img/bg-blue-section.webp") repeat;
+    background-size: auto;
+    &* {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        line-height: 1;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .advantage__title {
+            padding: 5.95em 0 0 0;
+            color: $white;
+            i.fa.fa-book {
+                font-size: 2.3em;
+                padding: 0 0.1em 0 0;
+                transform: skewX(349deg);
+            }
+            h2 {
+                display: inline;
+                font-size: 2.3em;
+                letter-spacing: 0.021em;
+            }
+        }
+        .advantage__description {
+            width: 58%;
+            padding: 2.8em 0 0 0;
+            color: $white;
+            text-align: center;
+            line-height: 1.8;
+            letter-spacing: 0.0112em;
+            @media screen and (max-width: 500px) {
+                width: 90%;
+            }
+            span {
+                font-size: 1.4em;
+                font-weight: 700;
+            }
+            span.circle-sketch-highlight {
+                position: relative;
+                &::before {
+                    content: "";
+                    left: -0.5em;
+                    top: -0.1em;
+                    border: 3px solid $blue;
+                    position: absolute;
+                    border-right-color: transparent;
+                    width: 100%;
+                    height: 1em;
+                    transform: rotate(2deg);
+                    opacity: 0.7;
+                    border-radius: 50%;
+                    padding: 0.3em 0.25em;
+                }
+                &::after {
+                    content: "";
+                    left: -0.5em;
+                    top: 0.1em;
+                    padding: 0.1em 0.25em;
+                    border: 3px solid $blue;
+                    border-left-color: transparent;
+                    border-top-color: transparent;
+                    position: absolute;
+                    width: 100%;
+                    height: 1em;
+                    transform: rotate(-1deg);
+                    opacity: 0.7;
+                    border-radius: 50%;
+                }
+            }
+            p {
+                display: inline;
+                font-size: 1.4em;
+            }
+        }
+        .advantage__list {
+            padding: 2em 0 0 0;
+            position: relative;
+            text-align: center;
+            ul.studyfeaturelist {
+                display: inline-block;
+                max-width: 59%;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                text-align: left;
+                @media screen and (max-width: 500px) {
+                    display: block;
+                    max-width: 100%;
+                    text-align: center;
+                    padding-left: 15px;
+                }
+                li.studyfeaturelist-item {
+                    display: block;
+                    position: relative;
+                    margin-bottom: 0.25em;
+                    .studyfeaturelist-icon {
+                        display: block;
+                        width: 100px;
+                        height: 50px;
+                        float: left;
+                        vertical-align: middle;
+                        line-height: 50px;
+                        background-color: $white;
+                        border: 1px solid $blue;
+                        color: $blue;
+                        font-size: 27px;
+                        transform: skewX(30deg);
+                        text-align: center;
+                        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+                        i {
+                            font-size: 1em;
+                        }
+                        @media screen and (max-width: 500px) {
+                            float: none;
+                            margin: auto;
+                            transform: none;
+                            box-shadow: none;
+                            background: transparent;
+                            color: $white;
+                            border: none;
+                        }
+                    }
+                    &:nth-child(even) .studyfeaturelist-icon {
+                        background: rgb(232, 243, 247);
+                        transform: skewX(-30deg);
+                        @media screen and (max-width: 500px) {
+                            float: none;
+                            margin: auto;
+                            transform: none;
+                            box-shadow: none;
+                            background: transparent;
+                            color: $white;
+                        }
+                    }
+                    &:nth-child(even) .studyfeaturelist-icon>* {
+                        transform: skewX(30deg);
+                        @media screen and (max-width: 500px) {
+                            transform: none;
+                        }
+                    }
+                    .studyfeaturelist-icon>* {
+                        transform: skewX(-30deg);
+                        @media screen and (max-width: 500px) {
+                            transform: none;
+                        }
+                    }
+                    .studyfeaturelist-detail {
+                        display: table;
+                        min-height: 50px;
+                        margin-left: 130px;
+                        @media screen and (max-width: 500px) {
+                            margin-left: 0;
+                            text-align: center;
+                            margin-bottom: 20px;
+                            width: 100%;
+                        }
+                        div {
+                            display: table-row;
+                            h4.studyfeaturelist-title {
+                                display: table-cell;
+                                vertical-align: middle;
+                                color: $white;
+                                line-height: 1;
+                                font-size: 22px;
+                                @media screen and (max-width: 500px) {
+                                    display: table-cell;
+                                    vertical-align: middle;
+                                    color: $white;
+                                    line-height: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cf {
+                    &::before,
+                     ::after {
+                        content: " ";
+                        display: table;
+                    }
+                    &::after {
+                        clear: both;
+                    }
+                }
+            }
+        }
+        .advantage__btn {
+            padding: 1.7em 0 6.9em 0;
+            .btn.btn__action {
+                a {
+                    span {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
