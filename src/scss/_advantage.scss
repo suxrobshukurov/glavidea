@@ -188,7 +188,7 @@ section.advantage {
                 }
                 .cf {
                     &::before,
-                     ::after {
+                    &::after {
                         content: " ";
                         display: table;
                     }
@@ -200,7 +200,7 @@ section.advantage {
         }
         .advantage__btn {
             padding: 1.7em 0 6.9em 0;
-            .btn.btn__action {
+            .btn.btn-violet {
                 a {
                     span {
                         color: $white;
