@@ -2,8 +2,8 @@
 @import "libs";
 @import "fonts";
 @import "common";
-@import "header";
-@import "promo";
-@import "advantage";
-@import "action";
-@import "footer";
+@import "../pug-parts/header/header";
+@import "../pug-parts/footer/footer";
+@import "../pug-parts/index/promo/promo";
+@import "../pug-parts/index/advantage/advantage";
+@import "../pug-parts/index/action/action";

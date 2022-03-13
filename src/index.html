@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ГлавИдея — Просто так быстрее</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
   <body>
     <header>
       <div class="container">
         <section class="header"> 
-          <div class="header-logo"><a href="#"> <img src="../img/logo.webp" alt="GlavIdea"></a></div>
+          <div class="header-logo"><a href="#"> <img src="img/logo.webp" alt="GlavIdea"></a></div>
           <nav class="header-nav">
             <ul class="header-menu">
               <li class="menu-item"><a class="item-link" href="#">Главная</a></li>
               <li class="menu-item"><a class="item-link dropdown-btn" id="dropdown-btn" href="#">Узнать больше</a>
                 <ul class="menu-submenu">
                   <li class="submenu-item"> <a class="item-link" href="#">Узнать больше</a></li>
-                  <li class="submenu-item"> <a class="item-link" href="#">О нас</a></li>
+                  <li class="submenu-item"> <a class="item-link" href="about.html">О нас</a></li>
                   <li class="submenu-item"> <a class="item-link" href="#">Бесплатный экземпляр</a></li>
                 </ul>
               </li>
@@ -107,13 +105,22 @@
         </div>
         <div class="action-content">
           <div class="advantage">
-            <div class="title">После подписки вы получаете:</div>
+            <div class="advantage-title">После подписки вы получаете:</div>
             <ul class="advantage-list"> 
-              <li class="list-item"> <i class="fas fa-angle-right"></i><span class="description"></span></li>
+              <li class="list-item"> <i class="fas fa-angle-right"></i><span class="description">Все самое важное на 12-15 страницах</span></li>
+              <li class="list-item"> <i class="fas fa-angle-right"></i><span class="description">Книги опытных христианских руководителей</span></li>
+              <li class="list-item"> <i class="fas fa-angle-right"></i><span class="description">Христианские и светские авторы</span></li>
+              <li class="list-item"> <i class="fas fa-angle-right"></i><span class="description">24 книги в год</span></li>
             </ul>
           </div>
+          <div class="gallary"><a class="gallary-img" data-fancybox data-caption="example-01" href="img/prev-tab-mob.webp"><img class="prev-img" src="img/prev-tab-mob.webp" alt="prev mob and tab"></a></div>
+        </div>
+        <div class="action-button">       
+          <div class="btn btn-violet"><a href="#"> <span>Оформите подписку</span></a></div>
         </div>
       </div>
     </section>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

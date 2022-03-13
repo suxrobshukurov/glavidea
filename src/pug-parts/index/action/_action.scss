@@ -1,0 +1,84 @@
+section.action-block  {
+    position: relative;
+    margin: 0;
+    padding: 6.8em 0 0 0;
+    min-height: 49.7em;
+    box-sizing: border-box;
+    line-height: 1;
+    & * {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1;
+    }    
+    .container {
+        display: grid;
+        margin: 0 auto;
+        .action-title { 
+            justify-self: center;
+            padding: 0 0 2.9em 0;
+            .title {
+                display: inline;
+                font-family: "Philofofer";
+                font-size: 2.5em;
+                font-weight: 700;
+                &:not(:last-child) {
+                    margin: 0 0.5em 0 0;
+                }
+            }
+            i {
+                margin: 0 .5em 0 0;
+                font-size: 1.9em;
+            }
+        }
+        .action-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .advantage {
+                .advantage-title {
+                    padding: 0 0 2em 0;
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    
+                }
+                ul.advantage-list {
+                    li.list-item {
+                        &:not(:last-child) {
+                            padding: 0 0 2em 0;
+                        }
+                        i {
+                            padding: 0 0.7em 0 0;
+                            font-size: 1.6em;
+                            font-weight: 700;
+                        }
+                        span.description {
+                            font-size: 1.6em;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            .gallary {
+                justify-self: end;
+                a.gallary-img {
+                    img.prev-img {}
+                }
+            }
+        }
+        .action-button {   
+            justify-items: center;
+            display: inline-grid;
+            .btn.btn-violet {
+                padding: 0.8em 1.5em;
+                a {
+                    span {
+                        font-size: 1.2em;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
