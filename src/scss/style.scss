@@ -4,6 +4,8 @@
 @import "common";
 @import "../pug-parts/header/header";
 @import "../pug-parts/footer/footer";
+// index page style 
 @import "../pug-parts/index/promo/promo";
 @import "../pug-parts/index/advantage/advantage";
 @import "../pug-parts/index/action/action";
+@import "../pug-parts/index/callback/callback.scss";

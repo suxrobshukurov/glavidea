@@ -1,34 +1,56 @@
-header
-    .container
-        section.header 
-            .header-logo
-                a(href="#") 
-                    img(src="img/logo.webp", alt="GlavIdea")
-            nav.header-nav
-                ul.header-menu
-                    li.menu-item
-                        a.item-link(href="#") Главная
-                    li.menu-item
-                        a.item-link#dropdown-btn.dropdown-btn(href="#") Узнать больше
-                        ul.menu-submenu
-                            li.submenu-item 
-                                a.item-link(href="#") Узнать больше
-                            li.submenu-item 
-                                a.item-link(href="about.html") О нас
-                            li.submenu-item 
-                                a.item-link(href="#") Бесплатный экземпляр
-                    li.menu-item 
-                        a.item-link(href="#") Часто задаваемые вопросы
-                    li.menu-item 
-                        a.item-link(href="#") Контакты
-                .menu-btn
-                    span 
-                    span 
-                    span 
-            .header-btns
-                .btn.btn-violet
-                    a(href="#") 
-                        span Подпишитесь
-                .btn.btn-blue
-                    a(href="#") 
-                        span Войти
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        )
+        title= "ГлавИдея — Просто так быстрее"
+        link(
+            rel="stylesheet",
+            href="css/style.min.css"
+        )
+        link(
+            rel="stylesheet", 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==",
+            crossorigin="anonymous",
+            referrerpolicy="no-referrer" 
+        )
+
+    body
+        header
+            .container
+                section.header 
+                    .header-logo
+                        a(href="#") 
+                            img(src="img/logo.webp", alt="GlavIdea")
+                    nav.header-nav
+                        ul.header-menu
+                            li.menu-item
+                                a.item-link(href="#") Главная
+                            li.menu-item
+                                a.item-link#dropdown-btn.dropdown-btn(href="#") Узнать больше
+                                ul.menu-submenu
+                                    li.submenu-item 
+                                        a.item-link(href="#") Узнать больше
+                                    li.submenu-item 
+                                        a.item-link(href="about.html") О нас
+                                    li.submenu-item 
+                                        a.item-link(href="#") Бесплатный экземпляр
+                            li.menu-item 
+                                a.item-link(href="#") Часто задаваемые вопросы
+                            li.menu-item 
+                                a.item-link(href="#") Контакты
+                        .menu-btn
+                            span 
+                            span 
+                            span 
+                    .header-btns
+                        .btn.btn-violet
+                            a(href="#") 
+                                span Подпишитесь
+                        .btn.btn-blue
+                            a(href="#") 
+                                span Войти
