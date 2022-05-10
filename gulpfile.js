@@ -36,11 +36,8 @@ gulp.task('scss', async function() {
 gulp.task('css', async function() {
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
-            'node_modules/slick-carousel/slick/slick.css',
-            'node_modules/animate.css/animate.min.css',
-            'node_modules/hover.css/css/hover-min.css',
-            'node_modules/swiper/swiper-bundle.min.css',
             'node_modules/@fancyapps/ui/dist/fancybox.css',
+            'node_modules/bootstrap/dist/css/bootstrap.min.css',
         ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('src/scss'))
@@ -60,11 +57,11 @@ gulp.task('script', async function() {
 gulp.task('js', async function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/slick-carousel/slick/slick.js',
-            'node_modules/wowjs/dist/wow.min.js',
-            'node_modules/swiper/swiper-bundle.min.js',
             'node_modules/@fancyapps/ui/dist/fancybox.umd.js',
-            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js'
+            'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/@popperjs/core/dist/umd/popper.min.js',
+
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
